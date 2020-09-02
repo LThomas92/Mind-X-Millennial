@@ -1,0 +1,53 @@
+Log created: 2020-09-02 00:34:41
+Type: backup
+[2020-09-02 00:34:43][notice]Start backing up.
+[2020-09-02 00:34:43][notice]server info fcgi:Off max execution time: 900 wp version:5.4.2 php version:7.4.2 db version:5.7.26 php ini:safe_mode: memory_limit:256M memory_get_usage:40.24 MB memory_get_peak_usage:40.78 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2020-09-02 00:34:43][notice]Prepare to backup backup_themes files.
+[2020-09-02 00:34:43][notice]File number: 19723
+[2020-09-02 00:34:43][notice]Start compressing backup_themes
+[2020-09-02 00:34:46][notice]Prepare to zip files. file: localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_themes.zip
+[2020-09-02 00:34:55][notice]Adding zip files completed.localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_themes.zip, filesize: 103.19 MB
+[2020-09-02 00:34:55][notice]Compressing backup_themes completed
+[2020-09-02 00:34:55][notice]Backing up backup_themes completed.
+[2020-09-02 00:34:55][notice]Prepare to backup backup_plugin files.
+[2020-09-02 00:34:55][notice]File number: 3186
+[2020-09-02 00:34:55][notice]Start compressing backup_plugin
+[2020-09-02 00:34:55][notice]Prepare to zip files. file: localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_plugin.zip
+[2020-09-02 00:34:57][notice]Adding zip files completed.localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_plugin.zip, filesize: 37.88 MB
+[2020-09-02 00:34:57][notice]Compressing backup_plugin completed
+[2020-09-02 00:34:57][notice]Backing up backup_plugin completed.
+[2020-09-02 00:34:57][notice]Prepare to backup backup_uploads files.
+[2020-09-02 00:34:57][notice]File number: 43
+[2020-09-02 00:34:57][notice]Start compressing backup_uploads
+[2020-09-02 00:34:57][notice]Prepare to zip files. file: localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_uploads.zip
+[2020-09-02 00:34:57][notice]Adding zip files completed.localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_uploads.zip, filesize: 8.85 MB
+[2020-09-02 00:34:57][notice]Compressing backup_uploads completed
+[2020-09-02 00:34:57][notice]Backing up backup_uploads completed.
+[2020-09-02 00:34:57][notice]Prepare to backup backup_content files.
+[2020-09-02 00:34:57][notice]File number: 3
+[2020-09-02 00:34:57][notice]Start compressing backup_content
+[2020-09-02 00:34:57][notice]Prepare to zip files. file: localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_content.zip
+[2020-09-02 00:34:57][notice]Adding zip files completed.localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_content.zip, filesize: 8.68 KB
+[2020-09-02 00:34:57][notice]Compressing backup_content completed
+[2020-09-02 00:34:57][notice]Backing up backup_content completed.
+[2020-09-02 00:34:57][notice]Prepare to backup backup_core files.
+[2020-09-02 00:34:57][notice]File number: 1668
+[2020-09-02 00:34:57][notice]Start compressing backup_core
+[2020-09-02 00:34:57][notice]Prepare to zip files. file: localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_core.zip
+[2020-09-02 00:34:58][notice]Adding zip files completed.localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_core.zip, filesize: 39.70 MB
+[2020-09-02 00:34:58][notice]Compressing backup_core completed
+[2020-09-02 00:34:58][notice]Backing up backup_core completed.
+[2020-09-02 00:34:58][notice]Prepare to backup backup_merge files.
+[2020-09-02 00:34:58][notice]File number: 5
+[2020-09-02 00:34:58][notice]Start compressing backup_merge
+[2020-09-02 00:34:59][notice]Prepare to zip files. file: localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_all.zip
+[2020-09-02 00:35:08][notice]Adding zip files completed.localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_all.zip, filesize: 54.18 MB
+[2020-09-02 00:35:08][notice]Cleaned up file, filename: /Applications/MAMP/htdocs/mind-of-a-millennial/wp-content/wpvividbackups/localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_themes.zip
+[2020-09-02 00:35:08][notice]Cleaned up file, filename: /Applications/MAMP/htdocs/mind-of-a-millennial/wp-content/wpvividbackups/localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_core.zip
+[2020-09-02 00:35:08][notice]Cleaned up file, filename: /Applications/MAMP/htdocs/mind-of-a-millennial/wp-content/wpvividbackups/localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_plugin.zip
+[2020-09-02 00:35:08][notice]Cleaned up file, filename: /Applications/MAMP/htdocs/mind-of-a-millennial/wp-content/wpvividbackups/localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_uploads.zip
+[2020-09-02 00:35:08][notice]Cleaned up file, filename: /Applications/MAMP/htdocs/mind-of-a-millennial/wp-content/wpvividbackups/localhost_mind-of-a-millennial_wpvivid-5f4ee8a1d2004_2020-09-02-00-34_backup_content.zip
+[2020-09-02 00:35:08][notice]Compressing backup_merge completed
+[2020-09-02 00:35:08][notice]Backing up backup_merge completed.
+[2020-09-02 00:35:08][notice]Backup completed.
+[2020-09-02 00:35:08][notice]Backup succeeded.

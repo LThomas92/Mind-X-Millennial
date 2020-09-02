@@ -1,0 +1,92 @@
+@import './variables/variables';
+
+@import './navigation';
+@import './homepage';
+@import './footer';
+@import './post';
+@import './category';
+@import './404';
+@import './comment';
+@import './search';
+@import './about-us';
+@import './form';
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $black;
+    box-sizing: border-box;
+    display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, li, a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-margins {
+    margin: 0 6rem;
+    @media only screen and (max-width: 800px) {
+       margin: 0 1rem;
+    }
+}
+
+.spacer-right-container {
+    margin: 2rem 0;
+}
+
+.spacer-right-blue {
+    background-color: $blue;
+    border-color: $blue;
+    margin-left: auto;
+    width: 60%;
+    height: 1px;
+    border: 1px solid $blue;
+    margin-bottom: 0.2rem;
+}
+
+.spacer-right-green {
+    background-color: $cyan;
+    border-color: $cyan;
+    margin-left: auto;
+    width: 60%;
+    height: 1px;
+    border: 1px solid $cyan;
+}
+
+.spacer-left-container {
+    margin-top: 1rem;
+}
+
+.spacer-left-blue {
+    background-color: $blue;
+    border-color: $blue;
+    margin-right: auto;
+    width: 60%;
+    height: 1px;
+    border: 1px solid $blue;
+    margin-bottom: 0.2rem;
+}
+
+.spacer-left-green {
+    background-color: $cyan;
+    border-color: $cyan;
+    margin-right: auto;
+    width: 60%;
+    height: 1px;
+    border: 1px solid $cyan;
+}

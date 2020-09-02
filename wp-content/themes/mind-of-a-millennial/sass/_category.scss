@@ -1,0 +1,60 @@
+.taxonomy-title {
+    color: $cyan;
+    font-size: 35px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.taxonomy-singles-container {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+        display: block;
+    }
+}
+
+.taxonomy-single-block {
+    display: flex;
+    background-color: $black-2;
+    width: 45%;
+    height: 200px;
+    margin: 2rem 0;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
+    &__content {
+        flex:0 0 35%;
+        padding: 1rem 1.2rem;
+        @media only screen and (max-width: 800px) {
+            padding: 1rem;
+        }
+        &__title {
+            color: $white; 
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+    &__img-container {
+        flex: 1;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+//TAG 
+.tag-title {
+    color: $blue !important
+}
+
+.category-margins {
+    margin: 0 6rem;
+    @media only screen and (max-width: 800px) {
+        margin: 0 2rem;
+    }
+}
+
+

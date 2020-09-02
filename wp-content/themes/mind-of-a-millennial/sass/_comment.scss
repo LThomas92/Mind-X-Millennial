@@ -1,0 +1,15 @@
+#wc-comment-header {
+    color: $white !important;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+#wpcomm .wpdiscuz-form-top-bar #wc_show_hide_loggedin_username {
+    color: $white !important;
+}
+
+#wc_show_hide_loggedin_username {
+    a {
+        color: $cyan;
+    }
+}

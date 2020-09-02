@@ -1,0 +1,19 @@
+.search-results-single__author {
+    color: $white;
+    margin: 1rem 0;
+    @media only screen and (max-width: 800px) {
+       margin: 0.5rem 0;
+    }
+}
+
+.no-results-container {
+    text-align: center;
+    color: $white;
+  &__title {
+      margin: 2rem 0;
+  }
+}
+
+#searchsubmit {
+    -webkit-appearance: none;
+}

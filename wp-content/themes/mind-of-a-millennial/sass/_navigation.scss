@@ -1,0 +1,135 @@
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid $white;
+    @media screen and (max-width: 800px) {
+          display: block;
+          padding: 0;
+    }
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    @media screen and (max-width: 800px) {
+          display: block;
+            text-align: center;
+    }
+    &__item {
+        a {
+            text-decoration: none;
+
+        }
+        margin: 0 2rem;
+        list-style: none;
+        color: $white;
+        text-transform: uppercase;
+        list-style-type: none;
+        font-size: 0.9rem;
+        &:hover {
+            border-bottom: 2px solid $cyan;
+            transition: 300ms;
+            color: $blue;
+            @media only screen and (max-width: 800px) {
+                border: none;
+
+            }
+        }
+        @media screen and (max-width: 800px) {
+            margin: 1rem 0;
+      }
+    }
+}
+
+.logo-box {
+    @media screen and (max-width: 800px) {
+        text-align: center;
+    }
+}
+
+.logo {
+    height: 6rem;
+    padding-left: 1.2rem;
+    cursor: pointer;
+    @media screen and (max-width: 800px) {
+        padding-left: 0;
+}
+}
+
+.search-bar-container {
+    margin-top: 1.5rem;
+    @media screen and (max-width: 800px) {
+        text-align: center;
+}
+}
+
+.nav-2nd-line {
+    background-color: $blue;
+    border-color: $blue;
+    margin-right: auto;
+    width: 60%;
+    height: 1px;
+    border: 1px solid $blue;
+    margin-bottom: 0.2rem;
+}
+
+//SEARCH FORM 
+
+::-webkit-input-placeholder  {
+    display: none !important;
+}
+
+#searchform input[type="text"] {
+    width: 100%;
+    background-color: $black-2;
+    border: none;
+    outline: none;
+    padding: 0.3rem 3.5rem;
+    border-radius: 2px;
+    color: $white;
+  
+    &::placeholder {
+        padding: 1.5rem 0;
+        @media screen and (max-width: 800px) {
+            text-align: center;
+     }
+    }
+    @media screen and (max-width: 800px) {
+        width: 30%;
+ }
+}
+
+.search-form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @media screen and (max-width: 800px) {
+        display: block;
+}
+}
+
+
+#searchform input[type="submit"] {
+    width: 70%;
+    background-color: $cyan;
+    border: none;
+    outline: none;
+    padding: 0.3rem 0;
+    border-radius: 2px;
+    color: $white;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    @media screen and (max-width: 800px) {
+       width: 50%;
+}
+}
+
+.header-img-icon .avatar {
+    margin: -1rem 0;
+    @media screen and (max-width: 800px) {
+        margin: 1rem 0 !important;
+ }
+}

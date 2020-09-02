@@ -1,0 +1,150 @@
+body.login {
+    background-color: #323232;
+}
+
+body.login div#login h1 a {
+    background-image: url(./img/Millennial_Logo.png);
+    max-width: 100% !important;
+    width: 100% !important;
+    max-height: 900px !important;
+    background-size: initial !important;
+    height: 95px !important;
+}
+
+body.login div#login form#loginform {
+    background-color: transparent;
+}
+
+body.login div#login form#loginform p label {
+    color: #f9f9f9;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body.login div#login form#loginform input[type="text"]{
+    background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    border-bottom: 3px solid #f9f9f9;
+    color: white;
+    -webkit-border-radius: 0px;  
+}
+
+#user_pass {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid #f9f9f9;
+    color: white;
+    -webkit-border-radius: 0px;  
+}
+
+.user-pass-wrap label {
+    color: #f9f9f9;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#login {
+    width: 60%;
+}
+
+.login #nav {
+    padding: 0;
+}
+
+.login #backtoblog {
+    padding: 0;
+}
+
+.login form {
+    border: 0;
+    padding: 0;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit {
+    background-color: #23437C;
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    border-radius: 0px;
+    margin-top: 1.2rem;
+}
+
+body.login div#login p#nav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f9f9f9;
+
+}
+
+body.login div#login p#backtoblog a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f9f9f9;
+}
+
+input[type="text"], input[type="password"]:focus {
+    outline-style:none;
+    outline: none !important;
+    box-shadow:none;
+    border-color:transparent;
+}
+
+#login .message {
+    display: none;
+}
+
+#registerform {
+    background: transparent;
+}
+
+#registerform label {
+    color: #f9f9f9;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#reg_passmail {
+    color: #f9f9f9;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ p.submit input#wp-submit {
+    background-color: #23437C;
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    border-radius: 0px;
+    margin-top: 1.2rem;
+}
+
+p.submit input#wp-submit:hover {
+   opacity: 0.8;
+}
+
+#registerform input[type="text"]{
+    background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    border-bottom: 3px solid #f9f9f9;
+    color: white;
+    -webkit-border-radius: 0px;  
+}
+
+#user_email {
+    background-color: transparent;
+border: 0;
+border-bottom: 3px solid #f9f9f9;
+color: white;
+}
+
+#lostpasswordform {
+    background: transparent;
+}
+
+#lostpasswordform label {
+    color: #f9f9f9;
+}
+
+#nav a[rel="nofollow"] {
+    display: none;
+}

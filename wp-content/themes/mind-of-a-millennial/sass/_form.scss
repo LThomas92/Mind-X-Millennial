@@ -1,0 +1,43 @@
+.um-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.um-form .um-field-label {
+    color: $white !important;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.um-form .um-left .um-half {
+    width: 100% !important;
+}
+
+.um-form .um-button.um-alt, .um input[type=submit].um-button.um-alt {
+    display: none !important;
+}
+
+.um-form input {
+    background-color: transparent !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+    color: white !important;
+    border: 0;
+    border-bottom: 3px solid !important;
+}
+
+.um-form input[type=text] {
+    padding: 0 !important;
+}
+
+.um-form input[type=submit].um-button {
+    background-color: #23437C !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100% !important;
+    padding: 1rem;
+    border: 0;
+    border-radius: 0px;
+    margin-top: 1.2rem;
+    border-bottom: none !important;
+}
+

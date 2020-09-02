@@ -1,0 +1,25 @@
+.main-content-404 {
+    text-align: center;
+    h2 {
+        font-size: 7rem;
+        color: $cyan;
+    }
+    &__title {
+        font-size: 2.5rem;
+        color: $white;
+        margin: 1rem 0;
+    }
+}
+
+.back-btn-404 {
+    background-color: $white;
+    padding: 0.5rem 0.7rem;
+    color: $black-2;
+   &:hover {
+       background-color: $blue;
+       color: $white;
+   }
+}
+
+
+
