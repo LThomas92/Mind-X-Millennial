@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<main>
+
 <div style="flex: 1;" class="taxonomy-reviews-title-container">
 <h2 class="taxonomy-title tag-title">#<span><?php single_tag_title();?></span></h2>
 </div> <!-- CATEGORY TITLE CONTAINER -->
@@ -28,5 +30,7 @@
 </div> <!-- CONTAINER MARGINS -->
 
 <?php wp_reset_postdata(); ?>
+
+</main>
 
 <?php get_footer();

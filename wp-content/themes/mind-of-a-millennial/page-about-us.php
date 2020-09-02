@@ -1,5 +1,7 @@
 <?php get_header();?>
 
+<main>
+
 <div class="about-us">
 <h2 class="about-us__title"><?php the_title();?></h2>
 
@@ -22,9 +24,8 @@ endif;
 </div>
 
 </div>
-
-
-
 </div>
+
+</main>
 
 <?php get_footer();?>

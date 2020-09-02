@@ -90,3 +90,7 @@ a {
     height: 1px;
     border: 1px solid $cyan;
 }
+
+main {
+    min-height: calc(100vh - 70px);
+}

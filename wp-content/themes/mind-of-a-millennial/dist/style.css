@@ -698,4 +698,7 @@ a {
   height: 1px;
   border: 1px solid darkcyan; }
 
+main {
+  min-height: calc(100vh - 70px); }
+
 /*# sourceMappingURL=style.css.map*/

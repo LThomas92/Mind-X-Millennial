@@ -2,6 +2,8 @@
 
 ?>
 
+<main>
+
 <div class="category-margins">
 
 <h3 class="taxonomy-title"><?php single_cat_title(); ?> Category</h3>
@@ -24,5 +26,7 @@
 
 </section> <!-- CATEGORY SECTION -->
 </div> <!-- CONTAINER MARGINS -->
+
+</main>
 
 <?php get_footer();?>

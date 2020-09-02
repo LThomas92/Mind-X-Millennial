@@ -3,9 +3,13 @@ get_header();
 $photocred = get_field('photo_credit');
 ?>
 
+
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); 
 $tags = get_the_terms(get_the_ID(), 'post_tag');
 ?>
+
+<main>
 
 <div style="flex: 1;" class="single-post-container">
     <section class="single-post-main-content">
@@ -128,6 +132,8 @@ if($cats_of_post){
 
 
 </div> <!-- SINGLE POST CONTAINER ENDS -->
+
+</main>
 
 
 <?php

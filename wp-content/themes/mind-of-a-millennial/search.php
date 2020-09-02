@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<main>
+
 <div class="main-search-container">
 
 
@@ -63,6 +65,8 @@ else : ?>
 </div>
 
 </div>
+
+</main>
 
 
 

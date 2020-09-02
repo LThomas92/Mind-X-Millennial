@@ -2,6 +2,8 @@
 get_header();
 ?>
 
+<main>
+
 <div class="main-section-homepage">
 	<div class="content-margins">
 	<div class="new-articles"> <!-- NEW ARTICLES SECTION STARTS -->
@@ -96,5 +98,7 @@ get_header();
 
 	</div> <!-- CONTENT MARGINS ENDS -->
 </div> <!-- MAIN SECTION HOMEPAGE ENDS -->
+
+</main>
 <?php
 get_footer();
