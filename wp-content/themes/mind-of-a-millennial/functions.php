@@ -57,7 +57,7 @@ function getFeaturePosts(){ ?>
             </div> <!-- FEATURED ARTICLE ITEM CONTENT CONTAINER -->
 
         <div class="featured-article-item__img-container">
-                            <img class="featured-article-item__img" src="<?php echo $image_attributes[0]; ?>" alt="<?php the_title(); ?>" />
+                        <a href="<?php the_permalink(); ?>"><img class="featured-article-item__img" src="<?php echo $image_attributes[0]; ?>" alt="<?php the_title(); ?>" /></a>
                             
                             </div> <!-- FEATURED ARTICLE ITEM IMG CONTAINER -->
                          </div>   <!-- FEATURED ARTICLE ITEM -->       
@@ -131,7 +131,8 @@ add_action( 'login_enqueue_scripts', 'my_custom_login_stylesheet' );
 ?>
 
 
-<?php add_filter('the_content', function($content) {
+<?php
+ add_filter('the_content', function($content) {
 	return str_replace(array("<iframe", "</iframe>"), array('<div class="iframe-container"><iframe', "</iframe></div>"), $content);
 });
 
@@ -147,3 +148,13 @@ add_filter('embed_oembed_html', function ($html, $url, $attr, $post_id) {
 add_filter('embed_oembed_html', function($code) {
   return str_replace('<iframe', '<iframe class="embed-responsive-item" ', $code);
 }); ?>
+<?php
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary', 'Mind X Millennial' ),
+			)
+        );
+
+      
+        
+    

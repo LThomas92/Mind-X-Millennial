@@ -50,6 +50,18 @@ $tags = get_the_terms(get_the_ID(), 'post_tag');
         <div class="content-margins">
             <div class="single-post__content">
             <?php the_content();?> 
+<?php $quaterBacks = get_field('choose_qb');
+$rand = $quaterBacks[array_rand($quaterBacks, 1)]; ?>
+
+<div style="text-align: center;">
+ <button class="qb-button">Which Black Quarterback are you?</button>
+ </div>
+
+<div style="text-align:center;" class="quarterback-answer-container">
+<?php foreach($rand as $randomQB) { ?>
+     <div class="qb-answer"><?php echo $randomQB;?></div>
+   <?php } ?>
+</div> <!-- qb answer container -->
             </div> <!-- SINGLE POST MAIN CONTENT -->
                 </div>
                 <?php endwhile; ?>
@@ -78,7 +90,7 @@ echo '<li class="post-tags-list__tags-item"><a href="' . get_category_link($tag-
     
     <aside class="related-posts-section">
         <h5 class="related-posts-section__title">Related Articles</h5>
-       <?php  $cats_of_post= get_the_category();
+       <?php $cats_of_post= get_the_category();
 
 if($cats_of_post){
      $cat_id = (int) $cats_of_post['0']->term_id;
@@ -108,7 +120,7 @@ if($cats_of_post){
                <?php endforeach; ?>
 
       <?php else: //No posts ?>
-           <p><?php _e('Sorry, no articles written under this category.'); ?></p>
+           <p><?php _e('Sorry, there are no other related articles written under this category.'); ?></p>
 
       <?php endif; ?>
       <?php $post = $temp_post; ?>

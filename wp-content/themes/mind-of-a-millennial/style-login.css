@@ -3,7 +3,7 @@ body.login {
 }
 
 body.login div#login h1 a {
-    background-image: url(./img/Millennial_Logo.png);
+    background-image: url(./img/logo.svg);
     max-width: 100% !important;
     width: 100% !important;
     max-height: 900px !important;

@@ -28,7 +28,7 @@ get_header();
 <?php $image_attributes = wp_get_attachment_image_src( $image_id, 'full');  ?>
 
 	<div class="article-item"> <!-- ONE ARTICLE ITEM -->
-	<img src="<?php echo $image_attributes[0]; ?>" class="article-item__img">
+	<a href="<?php the_permalink(); ?>"><img src="<?php echo $image_attributes[0]; ?>" class="article-item__img"></a>
 			<div class="article-item__content"> <!-- ARTICLE CONTENT DIV -->
 				<div class="date-and-category-container"> <!-- DATE AND CATEGORY -->
 				<p class="article-item__date"><?php the_date( get_option( 'date_format' ) ); ?></p>
