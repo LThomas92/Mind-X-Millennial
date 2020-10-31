@@ -82,6 +82,7 @@ __webpack_require__(2);
 
 var $ = jQuery.noConflict();
 $(document).ready(function () {
+
   if ($('body').hasClass('postid-97')) {
     $('.qb-btn-container').show();
   } else {

@@ -50,18 +50,7 @@ $tags = get_the_terms(get_the_ID(), 'post_tag');
         <div class="content-margins">
             <div class="single-post__content">
             <?php the_content();?> 
-<?php $quaterBacks = get_field('choose_qb');
-$rand = $quaterBacks[array_rand($quaterBacks, 1)]; ?>
 
-<div style="text-align: center;">
- <button class="qb-button">Which Black Quarterback are you?</button>
- </div>
-
-<div style="text-align:center;" class="quarterback-answer-container">
-<?php foreach($rand as $randomQB) { ?>
-     <div class="qb-answer"><?php echo $randomQB;?></div>
-   <?php } ?>
-</div> <!-- qb answer container -->
             </div> <!-- SINGLE POST MAIN CONTENT -->
                 </div>
                 <?php endwhile; ?>

@@ -221,15 +221,15 @@
 
 .menu-overlay {
   @media only screen and (max-width: 800px) {
-    min-height: 100%;
+    height: 100%;
     width: 100%;
-    position: sticky;
-    z-index: 1000;
-    top: 0px;
-    left: 0;
+    position: fixed;
+    z-index: 10;
+    top:0;
+    left:0;
     background-color:$black;
-    overflow-x: hidden;
     transition: 0.5s;
+    overflow: auto;
 }
 }
 

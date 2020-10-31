@@ -13,7 +13,7 @@
 <div class="taxonomy-single-block">
 <div class="taxonomy-single-block__content">
 <a href="<?php the_permalink();?>"><h2 class="taxonomy-single-block__content__title"><?php the_title(); ?></h2></a>
-
+<p class="taxonomy-single-block__content__date"><?php echo the_date();?></p>
 </div> <!-- CATEGORY SINGLE BLOCK CONTENT -->
 
 

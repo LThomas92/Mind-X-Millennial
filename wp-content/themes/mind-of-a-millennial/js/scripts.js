@@ -1,10 +1,11 @@
 var $ = jQuery.noConflict();
 $(document).ready(function(){
+
   if ($('body').hasClass('postid-97')) {
-    $('.qb-btn-container').show(); 
-   } else {
-      $('.qb-btn-container').hide(); 
-    }
+    $('.qb-btn-container').show();
+  } else {
+  $('.qb-btn-container').hide();
+}
 
 
 $('.qb-answer').hide();
@@ -12,9 +13,6 @@ $('.qb-button').click(function() {
   $('.qb-answer').fadeIn();
 });
 
-
-
-  
 
   $(function(){
     $('a').each(function(){
