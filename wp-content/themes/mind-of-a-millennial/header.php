@@ -16,7 +16,7 @@
 <header>
 <nav class="navigation-container">
 <div class="logo-box">
-<a href="<?php echo site_url();?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Mind of A Millennial Logo" /></a>
+<a href="<?php echo site_url();?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/x-mas-logo.png" alt="Mind of A Millennial Logo" /></a>
 </div>
 
 <div class="search-bar-container">

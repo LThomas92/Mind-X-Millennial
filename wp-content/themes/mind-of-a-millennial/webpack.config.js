@@ -65,7 +65,7 @@ module.exports = {
         // proxy the Webpack Dev Server endpoint
         // (which should be serving on http://localhost:3100/)
         // through BrowserSync
-        proxy: 'http://localhost:8712/mind-of-a-millennial',
+        proxy: 'http://localhost:8888/mind-of-a-millennial',
         files: [
           '**/*.php',
           '**/*.css',

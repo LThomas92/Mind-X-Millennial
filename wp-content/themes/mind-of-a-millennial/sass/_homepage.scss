@@ -22,7 +22,7 @@
         text-transform: uppercase;
         padding: 0.4rem 0.2rem;
         @media screen and (max-width: 800px) {
-            width: 100%
+            width: 100%;
      }
     }
 }
@@ -35,7 +35,7 @@
     z-index: -10;
     top: -20px;
     @media screen and (max-width: 800px) {
-        width: 90%
+        width: 90%;
  }
 }
 
@@ -93,6 +93,7 @@
         text-align: center;
         &:hover {
             color: $cyan;
+            transition: 300ms;
         }
     }
     &__button-container {
@@ -161,6 +162,13 @@
         font-size: 3rem;
         color: $white;
         padding-bottom: 1rem;
+        &:hover {
+            color: $cyan;
+            transition: 300ms;
+        }
+        @media screen and (max-width: 800px) {
+            font-size: 2rem;
+     }
     }
     &__excerpt {
         color: $white;

@@ -272,7 +272,8 @@
     margin: 1rem 0;
     text-align: center; }
     .article-item__title:hover {
-      color: darkcyan; }
+      color: darkcyan;
+      transition: 300ms; }
   .article-item__button-container {
     display: flex;
     justify-content: space-between; }
@@ -324,6 +325,12 @@
     font-size: 3rem;
     color: #fff;
     padding-bottom: 1rem; }
+    .featured-article-item__title:hover {
+      color: darkcyan;
+      transition: 300ms; }
+    @media screen and (max-width: 800px) {
+      .featured-article-item__title {
+        font-size: 2rem; } }
   .featured-article-item__excerpt {
     color: #fff;
     padding: 1rem 0; }
@@ -584,27 +591,37 @@
 .taxonomy-single-block {
   display: flex;
   background-color: #323232;
-  width: 45%;
+  width: 48%;
   height: auto;
   margin: 2rem 0; }
   @media only screen and (max-width: 800px) {
     .taxonomy-single-block {
       width: 100%; } }
   .taxonomy-single-block__content {
-    flex: 0 0 35%;
+    width: 45%;
     padding: 1rem 1.2rem; }
     @media only screen and (max-width: 800px) {
       .taxonomy-single-block__content {
         padding: 1rem; } }
     .taxonomy-single-block__content__title {
-      color: #fff; }
+      color: #fff;
+      font-size: 1.3rem; }
+      @media only screen and (max-width: 800px) {
+        .taxonomy-single-block__content__title {
+          font-size: 1rem; } }
       .taxonomy-single-block__content__title:hover {
-        color: #23437C; }
+        color: #23437C;
+        transition: 300ms; }
     .taxonomy-single-block__content__date {
       color: #fff;
       padding-top: 0.5rem; }
+    .taxonomy-single-block__content__excerpt {
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 0.8rem;
+      display: block; }
   .taxonomy-single-block__img-container {
-    flex: 1; }
+    width: 55%; }
   .taxonomy-single-block__img {
     width: 100%;
     height: 100%;

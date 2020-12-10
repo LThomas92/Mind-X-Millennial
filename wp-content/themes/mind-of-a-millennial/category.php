@@ -6,7 +6,7 @@
 
 <div class="category-margins">
 
-<h3 class="taxonomy-title"><?php single_cat_title(); ?> Category</h3>
+<h3 class="taxonomy-title">#<?php single_cat_title();?></h3>
 
 <section class="taxonomy-singles-container">
 <?php while ( have_posts() ) : the_post();?>
@@ -14,6 +14,7 @@
 <div class="taxonomy-single-block__content">
 <a href="<?php the_permalink();?>"><h2 class="taxonomy-single-block__content__title"><?php the_title(); ?></h2></a>
 <p class="taxonomy-single-block__content__date"><?php echo the_date();?></p>
+<p class="taxonomy-single-block__content__excerpt"><?php echo wp_trim_words(get_the_content(), 10)?></p>
 </div> <!-- CATEGORY SINGLE BLOCK CONTENT -->
 
 

@@ -1,6 +1,6 @@
 <footer class="footer-container">
     <div class="footer-margins">
-    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Mind of A Millennial" class="logo footer-logo"/>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/x-mas-logo.png" alt="Mind of A Millennial Logo" class="logo footer-logo"/>
     <div class="footer-share-icons">
       <a target="_blank" href="https://twitter.com/mofmillennial"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="Twitter Icon" class="footer-share-icons__item"></a>
       <a target="_blank" href="https://www.instagram.com/mindofamillennial/"><img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="Instagram Icon" class="footer-share-icons__item"></a>
