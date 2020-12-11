@@ -207,36 +207,15 @@
 .new-articles__title {
   background-color: #fff;
   width: 20%;
-  height: 50px;
   text-align: center;
   font-size: 2.5rem;
   text-transform: uppercase;
-  padding: 0.4rem 0.2rem; }
+  padding: 0.7rem 0.5rem;
+  color: darkcyan;
+  box-shadow: 5px 5px 0 darkcyan; }
   @media screen and (max-width: 800px) {
     .new-articles__title {
       width: 100%; } }
-
-.background-square-cyan {
-  width: 18%;
-  height: 50px;
-  background-color: darkcyan;
-  position: absolute;
-  z-index: -10;
-  top: -20px; }
-  @media screen and (max-width: 800px) {
-    .background-square-cyan {
-      width: 90%; } }
-
-.background-square-blue {
-  width: 18%;
-  height: 50px;
-  background-color: #23437C;
-  position: absolute;
-  z-index: -10;
-  top: -20px; }
-  @media screen and (max-width: 800px) {
-    .background-square-blue {
-      width: 90%; } }
 
 .new-article-title-box {
   position: relative;
@@ -293,16 +272,15 @@
 
 .featured-article {
   margin-top: 5rem; }
-  .featured-article__title-box {
-    position: relative; }
   .featured-article__title {
     background-color: #fff;
-    width: 20%;
-    height: 50px;
+    width: 30%;
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
-    padding: 0.4rem 0.2rem; }
+    padding: 0.7rem 0.5rem;
+    color: #23437C;
+    box-shadow: 5px 5px 0 #23437C; }
     @media screen and (max-width: 800px) {
       .featured-article__title {
         width: 100%; } }
@@ -573,6 +551,18 @@
 
 .qb-answer {
   margin-top: 2rem; }
+
+.wp-block-image figcaption {
+  font-family: 'Roboto Condesned', sans-serif;
+  text-align: center;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic; }
+
+.basic-vote {
+  text-align: center; }
+  .basic-vote a {
+    margin: 0 auto; }
 
 .taxonomy-title {
   color: darkcyan;

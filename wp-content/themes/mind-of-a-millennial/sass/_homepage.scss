@@ -16,39 +16,16 @@
     &__title {
         background-color: $white;
         width: 20%;
-        height: 50px;
         text-align: center;
         font-size: 2.5rem;
         text-transform: uppercase;
-        padding: 0.4rem 0.2rem;
+        padding: 0.7rem 0.5rem;
+        color: $cyan;
+        box-shadow: 5px 5px 0 $cyan;
         @media screen and (max-width: 800px) {
             width: 100%;
      }
     }
-}
-
-.background-square-cyan {
-    width: 18%;
-    height: 50px;
-    background-color: $cyan;
-    position: absolute;
-    z-index: -10;
-    top: -20px;
-    @media screen and (max-width: 800px) {
-        width: 90%;
- }
-}
-
-.background-square-blue {
-    width: 18%;
-    height: 50px;
-    background-color: $blue;
-    position: absolute;
-    z-index: -10;
-    top: -20px;
-    @media screen and (max-width: 800px) {
-        width: 90%
- }
 }
 
 .new-article-title-box {
@@ -124,17 +101,15 @@
 
 .featured-article {
     margin-top: 5rem;
-    &__title-box {
-        position: relative;
-    }
     &__title {
         background-color: $white;
-        width: 20%;
-        height: 50px;
+        width: 30%;
         text-align: center;
         font-size: 2.5rem;
         text-transform: uppercase;
-        padding: 0.4rem 0.2rem;
+        padding: 0.7rem 0.5rem;
+        color: $blue;
+        box-shadow: 5px 5px 0 $blue;
         @media screen and (max-width: 800px) {
             width: 100%;
      }

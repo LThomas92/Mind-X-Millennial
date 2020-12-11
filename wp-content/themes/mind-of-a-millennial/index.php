@@ -7,9 +7,7 @@ get_header();
 <div class="main-section-homepage">
 	<div class="content-margins">
 	<div class="new-articles"> <!-- NEW ARTICLES SECTION STARTS -->
-	<div class="new-article-title-box">
 	<h4 class="new-articles__title">New</h4>
-	<div class="background-square-cyan"></div>
 	</div>
 	
 		<section class="homepage-article-container">
@@ -58,12 +56,6 @@ get_header();
 <?php endif; ?>
 
 
-		
-
-		
-
-
-
 </section> <!-- HOMEPAGE ARTICLE CONTAINER ENDS -->
 	</div> <!-- NEW ARTICLE SECTION ENDS -->
 
@@ -74,16 +66,16 @@ get_header();
 	</div>
 		<!-- SPACER DIV RIGHT -->
 
+<div class="content-margins">
 		<!-- FEATURED ARTICLE SECTION --> 
-		<div class="featured-article__title-box">
-		<div class="background-square-blue"></div>
 		<h4 class="featured-article__title">Featured</h4>
-		</div>
 		<div class="featured-article">
 
 	<?php getFeaturePosts(); ?>
 
 		</div><!-- FEATURED ARTICLE SECTION  --> 
+
+		</div> <!-- content margins -->
 
 		<!-- SPACER DIV RIGHT -->
 	<div class="spacer-left-container">

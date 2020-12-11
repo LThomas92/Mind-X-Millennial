@@ -37,7 +37,7 @@ function getFeaturePosts(){ ?>
                 while ($featured_query->have_posts()) : $featured_query->the_post(); ?>
 
             <?php $image_id = get_post_thumbnail_id(); ?>
-            <?php $image_attributes = wp_get_attachment_image_src( $image_id, 'full');  ?>
+            <?php $image_attributes = wp_get_attachment_image_src($image_id, 'full');  ?>
                  
             <div class="featured-article-item">
             <div class="featured-article-item__content-container">
