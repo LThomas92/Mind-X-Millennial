@@ -13,11 +13,12 @@
 @import './form';
 
 
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 body {
     background-color: $black;
@@ -25,10 +26,11 @@ body {
     display: flex;
   min-height: 100vh;
   flex-direction: column;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: $oswald;
 }
 
 p, li, a, button {
@@ -46,52 +48,45 @@ a {
     }
 }
 
-.spacer-right-container {
-    margin: 2rem 0;
-}
-
-.spacer-right-blue {
-    background-color: $blue;
-    border-color: $blue;
-    margin-left: auto;
-    width: 60%;
-    height: 1px;
-    border: 1px solid $blue;
-    margin-bottom: 0.2rem;
-}
-
-.spacer-right-green {
-    background-color: $cyan;
-    border-color: $cyan;
-    margin-left: auto;
-    width: 60%;
-    height: 1px;
-    border: 1px solid $cyan;
-}
-
-.spacer-left-container {
-    margin-top: 1rem;
-}
-
-.spacer-left-blue {
-    background-color: $blue;
-    border-color: $blue;
-    margin-right: auto;
-    width: 60%;
-    height: 1px;
-    border: 1px solid $blue;
-    margin-bottom: 0.2rem;
-}
-
-.spacer-left-green {
-    background-color: $cyan;
-    border-color: $cyan;
-    margin-right: auto;
-    width: 60%;
-    height: 1px;
-    border: 1px solid $cyan;
-}
-
 main {
     min-height: calc(100vh - 70px);
+}
+
+.three-column-grid {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+       flex-direction: column;
+     }
+    &__single {
+        width: 31%;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+            margin: 2rem 0;
+         }
+        figure {
+            width: 100%;
+            height: 250px;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+        h2 {
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: -0.24px;
+           margin: 0.5rem 0;
+        }
+        .cat-date {
+            color:darkcyan;
+            font-family: $roboto;
+            border-top: 0.5px solid rgba($white, 0.6);
+            padding-top: 1rem;
+            font-size: 0.9rem;
+        }
+    }
 }

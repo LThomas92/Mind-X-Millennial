@@ -26,44 +26,7 @@ add_action( 'wp_enqueue_scripts', 'sde_2020_scripts' );
     
 
 //POST THUMBNAIL FUNCTION 
-add_theme_support( 'post-thumbnails' );
-
-
-function getFeaturePosts(){ ?>              
-             
-                <?php
-                $default_thumbnail = 'https://img.techbrij.com/techbrij%20logo.gif';
-                $featured_query = new WP_Query('showposts=1&orderby=rand&category_name=featured');
-                while ($featured_query->have_posts()) : $featured_query->the_post(); ?>
-
-            <?php $image_id = get_post_thumbnail_id(); ?>
-            <?php $image_attributes = wp_get_attachment_image_src($image_id, 'full');  ?>
-                 
-            <div class="featured-article-item">
-            <div class="featured-article-item__content-container">
-            <div class="featured-article-item__title-container">
-            <a style="text-decoration: none" href="<?php the_permalink();?>"><h3 class="featured-article-item__title"><?php the_title()?></h3></a>
-
-            <p class="featured-article-item__date"><?php echo the_date(); ?></p>
-            <div class="featured-article-item__excerpt"><?php echo the_excerpt();?></div>
-            <p class="featured-article-item__category"><?php
-				$category = get_the_category(); 
-				echo $category[1]->cat_name;
-                ?></p>
-                  <p class="featured-article-item__author">By <?php echo get_author_name();?></p>
-                </div>
-              
-
-            </div> <!-- FEATURED ARTICLE ITEM CONTENT CONTAINER -->
-
-        <div class="featured-article-item__img-container">
-                        <a href="<?php the_permalink(); ?>"><img class="featured-article-item__img" src="<?php echo $image_attributes[0]; ?>" alt="<?php the_title(); ?>" /></a>
-                            
-                            </div> <!-- FEATURED ARTICLE ITEM IMG CONTAINER -->
-                         </div>   <!-- FEATURED ARTICLE ITEM -->       
-                <?php endwhile; ?>
-                <?php wp_reset_query(); ?>
-<?php } ?>
+add_theme_support( 'post-thumbnails' );?>
 
 
 <?php 

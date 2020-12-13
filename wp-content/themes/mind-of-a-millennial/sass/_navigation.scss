@@ -40,12 +40,7 @@
 }
 }
 
-.search-bar-container {
-    margin-top: 1.5rem;
-    @media screen and (max-width: 800px) {
-        text-align: center;
-}
-}
+
 
 .nav-2nd-line {
     background-color: $blue;
@@ -61,53 +56,6 @@
 
 ::-webkit-input-placeholder  {
     display: none !important;
-}
-
-#searchform input[type="text"] {
-    width: 100%;
-    background-color: $black-2;
-    border: none;
-    outline: none;
-    padding: 0.3rem 3.5rem;
-    border-radius: 2px;
-    color: $white;
-  
-    &::placeholder {
-        padding: 1.5rem 0;
-        @media screen and (max-width: 800px) {
-            text-align: center;
-     }
-    }
-    @media screen and (max-width: 800px) {
-        width: 30%;
- }
-}
-
-.search-form-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    @media screen and (max-width: 800px) {
-        display: block;
-        margin-bottom: 2rem;
-}
-}
-
-
-#searchform input[type="submit"] {
-    width: 70%;
-    background-color: $cyan;
-    border: none;
-    outline: none;
-    padding: 0.3rem 0;
-    border-radius: 2px;
-    color: $white;
-    display: inline-block;
-    font-size: 10px;
-    cursor: pointer;
-    @media screen and (max-width: 800px) {
-       width: 50%;
-}
 }
 
 
@@ -129,26 +77,36 @@
             &:last-child {
                 white-space: nowrap;
             }
-            &:hover {
-                border-bottom: 2px solid $cyan;
-                transition: 300ms;
-                @media only screen and (max-width: 800px) {
-                    border: none;
-                }
-            }
                 a {
                     text-decoration: none;
                     color: $white;
                     &:hover {
                         color: $blue;
+                        transition: 300ms;
                     };
                 }
+        }
+        .sub-menu {
+            display: none;
+            transition: 300ms;
+            li {
+                margin-top: 1rem;
+            }
         }
     }
 }
 
-
-
+.search-icon {
+    height: 1.2rem;
+    display: block;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1.2rem;
+    @media only screen and (max-width: 800px) {
+      display: none;
+       }
+}
 
 //MOBILE NAV 
 .hamburger-menu-icon {
@@ -236,9 +194,7 @@
   margin: 1rem;
   }
 
-
-
-.active {
-    padding-bottom: 3px;
-    border-bottom: 1px solid $cyan;
-}
+  [aria-current="page"] {
+    color: darkcyan;
+    transition: all 200ms;
+  }

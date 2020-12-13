@@ -11,162 +11,151 @@
     flex: 1;
 }
 
-
-.new-articles {
-    &__title {
-        background-color: $white;
-        width: 20%;
-        text-align: center;
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        padding: 0.7rem 0.5rem;
-        color: $cyan;
-        box-shadow: 5px 5px 0 $cyan;
-        @media screen and (max-width: 800px) {
-            width: 100%;
-     }
-    }
-}
-
-.new-article-title-box {
-    position: relative;
-    margin: 1.5rem 0;
-}
-
-.article-item {
-    width: 30%;
-    border: 3px solid $offWhite;
-    @media only screen and (max-width: 800px) {
-        width: 100%;
-        margin: 2rem 0;
-    }
-    &__img-container {
-        width: 100%;
-        height: auto;
-    }
-    &__img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        display: block;
-    }
-    &__date {
-        color: $black;
-    }
-    &__category {
-        color: $black;
-    }
-    &__content {
-        background-color: $offWhite;
-        height: 150px;
-        padding: 0 1rem;
-    }
-    &__title-link {
-        text-decoration: none;
-    }
-    &__title {
-        color: $black;
-        margin: 1rem 0;
-        text-align: center;
-        &:hover {
-            color: $cyan;
-            transition: 300ms;
-        }
-    }
-    &__button-container {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__social-share-list {
-        display: flex;
-        li {
-            list-style: none;
-        }
-    }
-}
-
-.date-and-category-container {
+.homepage-top-section {
     display: flex;
     justify-content: space-between;
-    padding-top: 0.5rem;
+    @media only screen and (max-width: 800px) {
+       flex-direction: column;
+    }
+    &__left {
+        width: 68%;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+            margin-bottom: 3rem;
+         }
+        ul {
+            list-style-type: none;
+        }
+    }
+    &__right {
+        width: 30%;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+         }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            a {
+                position: relative;
+                &:last-child {
+                    margin-top: 0.7rem;
+                }
+            }
+        }
+    }
 }
-
-.read-more-btn {
-    text-decoration: none;
-    color: $cyan;
-}
-
-
-//FEATURED ARTICLE SECTION 
 
 .featured-article {
-    margin-top: 5rem;
-    &__title {
-        background-color: $white;
-        width: 30%;
-        text-align: center;
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        padding: 0.7rem 0.5rem;
-        color: $blue;
-        box-shadow: 5px 5px 0 $blue;
-        @media screen and (max-width: 800px) {
-            width: 100%;
-     }
-    }
-}
-
-.featured-article-item {
-    display: flex;
-    @media screen and (max-width: 800px) {
-        display: block;
-        flex: row-reverse;
- }
-    &__content-container {
-        width: 100%;
+    width: 100%;
+    height: 510px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    position: relative;
+    @media only screen and (max-width: 800px) {
+        height: 400px;
     }
     &__date {
-        color: $white;
+            color: $white !important;
+            font-weight: 700;
+            display: block;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 10px;
     }
-    &__title-container {
-        padding: 2rem;
-       background-color: $black-2;
-        height: auto;
-    }
-    &__title {
-        font-size: 3rem;
-        color: $white;
-        padding-bottom: 1rem;
-        &:hover {
-            color: $cyan;
-            transition: 300ms;
+    &__text {
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        padding: 0 50px;
+        margin-bottom: 60px;
+        h1 {
+            color: $white;
+            font-size: 2.2rem;
+            font-family: $oswald;
+            &:hover {
+                transition: 300ms;
+                color: darkcyan;
+                cursor: pointer;
+            }
         }
-        @media screen and (max-width: 800px) {
-            font-size: 2rem;
-     }
-    }
-    &__excerpt {
-        color: $white;
-        padding: 1rem 0;
-    }
-    &__category {
-        font-size: 1.2rem;
-        color: $white;
-        padding: 1rem 0;
-    }
-    &__author {
-        font-size: 1.2rem;
-        color: $white;
-    }
-    &__img-container {
-        width: 80%;
-        @media screen and (max-width: 800px) {
-            width: 100%;
-     }
-    }
-    &__img {
-        width: 100%;
     }
 }
 
+.featured-article-small {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+   
+    &__date {
+            color: $white !important;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 10px;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        padding: 0 30px;
+        h1 {
+            color: $white;
+            font-size: 1.1rem;
+            font-family: $oswald;
+            &:hover {
+                transition: 300ms;
+                color: darkcyan;
+                cursor: pointer;
+            }
+        }
+    }
+}
 
+.image-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.homepage-second-heading {
+    h2 {
+        margin: 2rem 0;
+        font-size: 1.8rem;
+        color: $white;
+        letter-spacing: 1.2px;
+        position: relative;
+        &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            background-color: darkcyan;
+            width: 90%;
+            height: 1px;
+            background-repeat: no-repeat;
+            @media only screen and (max-width: 800px) {
+                width: 55%;
+            }
+        }
+    }
+}
+
+.cat-date {
+    a {
+        color: darkcyan;
+        cursor: pointer;
+        &:hover {
+            color: $white;
+        }
+        }
+    }
