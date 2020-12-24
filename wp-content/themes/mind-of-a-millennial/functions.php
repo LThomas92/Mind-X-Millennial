@@ -28,6 +28,13 @@ add_action( 'wp_enqueue_scripts', 'sde_2020_scripts' );
 //POST THUMBNAIL FUNCTION 
 add_theme_support( 'post-thumbnails' );?>
 
+<?php
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary', 'Mind X Millennial' ),
+			)
+        ); ?>
+
 
 <?php 
 add_action('admin_init', 'redirectSubsToFrontEnd');
@@ -111,12 +118,7 @@ add_filter('embed_oembed_html', function ($html, $url, $attr, $post_id) {
 add_filter('embed_oembed_html', function($code) {
   return str_replace('<iframe', '<iframe class="embed-responsive-item" ', $code);
 }); ?>
-<?php
-		register_nav_menus(
-			array(
-				'menu-1' => esc_html__( 'Primary', 'Mind X Millennial' ),
-			)
-        );
+
 
       
         

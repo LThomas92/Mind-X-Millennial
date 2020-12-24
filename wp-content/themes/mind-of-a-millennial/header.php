@@ -16,14 +16,31 @@
 <body <?php body_class(); ?>>
 
 <div class="search-overlay-container">
-<img class="search-close" src="<?php echo get_template_directory_uri(); ?>/img/close.svg" alt="Close Icon" />
+<img class="search-close" src="<?php echo get_template_directory_uri(); ?>/img/close-blue.svg" alt="Close Icon" />
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
         <label>
         <input style="line-height: 4rem" type="search" class="search-field" placeholder="Find Something..." value="<?php echo get_search_query(); ?>" name="s" />
 		<button type="submit" class="search-submit"></button>
 		</label>
 </form>
-</div>
+
+<h4 class="popular-search-terms__title">Popular search terms</h4>
+<ul class="popular-search-terms">
+<li>Sports</li>
+<li>NBA</li>
+<li>NFL</li>
+<li>Dating</li>
+<li>Millennial</li>
+<li>Lifestyle</li>
+<li>Music</li>
+<li>Russell Westbrook</li>
+<li>LeBron James</li>
+<li>Millennial Dating Series</li>
+<li>Fictional Fridays</li>
+<li>Social Media</li>
+</ul>
+
+</div> <!-- search overlay container -->
 <header>
 <nav class="navigation-container">
 <div class="logo-box">

@@ -22,6 +22,7 @@
     }
     @media screen and (max-width: 800px) {
         text-align: center;
+        margin: 1rem 0;
     }
 
 }
@@ -195,6 +196,6 @@
   }
 
   [aria-current="page"] {
-    color: darkcyan;
+    color: darkcyan !important;
     transition: all 200ms;
   }

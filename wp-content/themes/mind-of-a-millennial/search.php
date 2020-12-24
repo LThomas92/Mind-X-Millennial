@@ -34,10 +34,12 @@ the_post(); ?>
 
 <div class="taxonomy-single-block">
     <div class="taxonomy-single-block__img-container">
-<a href="<?php the_permalink();?>"><img class="taxonomy-single-block__img" src="<?php echo $image_attributes[0];?>" alt="<?php the_title(); ?> . Thumbnail"></a>
+<a href="<?php the_permalink();?>">
+<?php the_post_thumbnail();?>
+</a>
 </div>
 <div class="taxonomy-single-block__content">
-<h3 class="taxonomy-single-block__content__title"><?php the_title();?></h3>
+<a href="<?php the_permalink();?>"><h3 class="taxonomy-single-block__content__title"><?php the_title();?></h3></a>
 <p class="search-results-single__author">By <?php the_author();?></p>
 <a class="read-more-btn" href="<?php the_permalink();?>">Read More</a>
 

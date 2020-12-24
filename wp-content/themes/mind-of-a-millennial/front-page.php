@@ -84,7 +84,8 @@ get_header();
             'post_type' => 'post',
 			'post_status' => array('publish'),
 			'category_name' => 'lifestyle',
-            'orderby' => 'date',
+			'orderby' => 'date',
+			'order' => 'ASC',
             'posts_per_page' => 3,
             'facetwp' => true,
             'ignore_sticky_posts' => true

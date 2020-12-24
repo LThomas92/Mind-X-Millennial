@@ -73,4 +73,10 @@
     }
 }
 
-
+.read-more-btn {
+    color: darkcyan;
+    &:hover {
+        transition: 300ms;
+        color: rgba(darkcyan, 0.6);
+    }
+}
