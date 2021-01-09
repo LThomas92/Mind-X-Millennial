@@ -54,11 +54,16 @@ main {
 .three-column-grid {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     @media only screen and (max-width: 800px) {
        flex-direction: column;
      }
     &__single {
         width: 31%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
         @media only screen and (max-width: 800px) {
             width: 100%;
             margin: 2rem 0;

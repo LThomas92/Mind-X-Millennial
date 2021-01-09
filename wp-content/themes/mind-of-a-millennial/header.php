@@ -25,26 +25,27 @@
 </form>
 
 <h4 class="popular-search-terms__title">Popular search terms</h4>
+
+<?php if( have_rows('search_topics', 'option') ): ?>
 <ul class="popular-search-terms">
-<li>Sports</li>
-<li>NBA</li>
-<li>NFL</li>
-<li>Dating</li>
-<li>Millennial</li>
-<li>Lifestyle</li>
-<li>Music</li>
-<li>Russell Westbrook</li>
-<li>LeBron James</li>
-<li>Millennial Dating Series</li>
-<li>Fictional Fridays</li>
-<li>Social Media</li>
+    <?php while( have_rows('search_topics', 'option') ) : the_row();
+        $searchTopic= get_sub_field('search_topic'); ?>
+      <a href="<?php echo site_url() . '?s=' . urlencode( $searchTopic ) ?>"><li><?php echo $searchTopic;?></li></a>
+
+  <?php 
+    endwhile;
+else :
+    // Do something...
+endif; ?>
 </ul>
+
+
 
 </div> <!-- search overlay container -->
 <header>
 <nav class="navigation-container">
 <div class="logo-box">
-<a href="<?php echo site_url();?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/x-mas-logo.png" alt="Mind of A Millennial Logo" /></a>
+<a href="<?php echo site_url();?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Mind of A Millennial Logo" /></a>
 </div>
 
 

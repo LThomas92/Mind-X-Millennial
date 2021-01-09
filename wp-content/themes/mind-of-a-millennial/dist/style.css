@@ -876,12 +876,17 @@ main {
 
 .three-column-grid {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: stretch; }
   @media only screen and (max-width: 800px) {
     .three-column-grid {
       flex-direction: column; } }
   .three-column-grid__single {
-    width: 31%; }
+    width: 31%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start; }
     @media only screen and (max-width: 800px) {
       .three-column-grid__single {
         width: 100%;

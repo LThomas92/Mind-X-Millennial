@@ -119,6 +119,10 @@ add_filter('embed_oembed_html', function($code) {
   return str_replace('<iframe', '<iframe class="embed-responsive-item" ', $code);
 }); ?>
 
+<?php if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+} ?>
+
 
       
         
